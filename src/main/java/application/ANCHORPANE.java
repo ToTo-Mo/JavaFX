@@ -23,8 +23,7 @@ public class ANCHORPANE extends Application {
     public void start(Stage stage) {
         AnchorPane root = new AnchorPane();
         BorderPane child = new BorderPane();
-        root.getChildren().add(child);
-
+        
         Button btn1 = new Button("Button1");
         root.getChildren().add(btn1);
         Button btn2 = new Button("Button2");
@@ -41,12 +40,10 @@ public class ANCHORPANE extends Application {
         root.getChildren().add(btn5);
         AnchorPane.setBottomAnchor(btn5, 8.0);
 
-        child.getChildren().addAll(btn1,btn2,btn3,btn4,btn5);
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
     }
 
     public static void main(String[] args) {

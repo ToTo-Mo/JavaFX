@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ANCHORPANE",
+            "request": "launch",
+            "mainClass": "application/application.ANCHORPANE",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GRID",
+            "request": "launch",
+            "mainClass": "application/application.task.GRID",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GRID",
+            "request": "launch",
+            "mainClass": "application/application.GRID",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "application/application.HBOX.App",
