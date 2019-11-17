@@ -3,6 +3,7 @@ package application.task;
 import application.HBOX;
 import application.VBOX;
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
@@ -18,31 +19,36 @@ public class GRID extends Application {
         AnchorPane root = new AnchorPane();
 
         VBox table = new VBox();
-        AnchorPane.setTopAnchor(table,0.0);
-        AnchorPane.setBottomAnchor(table, 0.0);
-        AnchorPane.setLeftAnchor(table, 0.0);
-        AnchorPane.setRightAnchor(table, 0.0);
 
         // 상
         HBox top = new HBox();
+        top.setPadding(new Insets(5,5,0,5));
+        top.setSpacing(5.0);
         Button[] top_button = new Button[3];
         for(int i=0; i<3; i++){
             top_button[i] = new Button(Integer.toString(i+1));
+            top_button[i].setPrefSize(120, 80);
         }   
         // 하
         HBox buttom = new HBox();
         // 하 좌
         GridPane buttom_left = new GridPane();
+        buttom_left.setHgap(5);
+        buttom_left.setVgap(5);
+        buttom_left.setPadding(new Insets(5, 0, 5,5));
         Button[] buttom_left_button = new Button[12];
         for(int i=0; i<12; i++){
             buttom_left_button[i] = new Button(Integer.toString(i+4));
+            buttom_left_button[i].setPrefSize(90, 80);
         }        
         // 하 우
         VBox buttom_right = new VBox();
+        buttom_right.setPadding(new Insets(5, 5, 5, 5));
+        buttom_right.setSpacing(5.0);
         Button[] buttom_right_button = new Button[5];
         for(int i=0; i<5; i++){
             buttom_right_button[i] = new Button(Integer.toString(i+16));
-            
+            buttom_right_button[i].setPrefSize(85, 63);
         }
 
         // 요소 설정
@@ -59,9 +65,12 @@ public class GRID extends Application {
 
 
         Scene scene = new Scene(root);
-
+        
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        System.out.println("자바프로그래밍 과제\n20161213 최범휘");
     }
 
     public static void main(String[] args){
