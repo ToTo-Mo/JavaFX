@@ -1,0 +1,13 @@
+#label_password{
+    -fx-text-fill : #ff0000;
+}
+
+.root{
+    -fx-background-image : url("background.jpg");
+}
+
+.jfx-button{
+    -fx-background-color : cyan;
+}
+
+    
