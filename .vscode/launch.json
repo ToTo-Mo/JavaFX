@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ViewController",
+            "request": "launch",
+            "mainClass": "application/application.EventDrivenGUI.ViewController",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - code",
             "request": "launch",
             "mainClass": "application/application.UsingCSS.code",

@@ -9,4 +9,5 @@ module application {
     exports application.ResizingOfChildNodes;
     exports application.AligningOfChildNodes;
     exports application.UsingCSS;
+    exports application.EventDrivenGUI;
 }
