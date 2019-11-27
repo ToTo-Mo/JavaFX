@@ -1,54 +1,64 @@
 package application.EventDrivenGUI;
 
+import java.io.IOException;
+
+import com.jfoenix.controls.JFXButton;
+
 import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class ViewController extends Application {
 
-    Scene scene;
-    AnchorPane root;
+    @FXML
+    public JFXButton apply;
+    @FXML
+    public JFXButton cancel;
+    @FXML
+    public JFXButton lookup;
+    @FXML
+    public JFXButton search;
+    @FXML
+    public JFXButton setting;
+    @FXML
+    public AnchorPane show;
 
-    Button[] buttons;
-    Label test;
+    Scene scene;
+    Stage primaryStage;
+
+    @FXML
+    public void initialize() {
+        
+        apply.setOnAction(event -> {
+            try {
+                show.getChildren().add(FXMLLoader.load(getClass().getResource("/application/EventDrivenGUI/apply.fxml")));
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        });
+
+        cancel.setOnAction(event ->{
+            show.getChildren().clear();
+        });
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         // TODO Auto-generated method stub
-
-        initialize();
-        setEvent();
-
-        root.getChildren().addAll(buttons);
-        root.getChildren().add(test);
-        
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-    public void initialize(){
-        buttons = new Button[2];
-        for(int i=0; i<buttons.length; i++)
-            buttons[i] = new Button();
-    
-        test = new Label("잘가");
-
-        root = new AnchorPane();
+        Parent root = FXMLLoader.load(getClass().getResource("/application/EventDrivenGUI/view.fxml"));
         scene = new Scene(root);
-    }
-    
-    public void setEvent(){
-        for(int i=0; i<buttons.length; i++)
-            buttons[i].setOnMousePressed(event -> {
-                test.setText("안녕");
-            });
-    }
-
-    public static void main(String[] args){
-        launch();
+        this.primaryStage = primaryStage;
+        this.primaryStage.setScene(scene);
+        this.primaryStage.show();
     }
 }
