@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -53,14 +54,18 @@ public class SequenceOfEvent extends Application {
 
         // Create two EventHandlders
         EventHandler<MouseEvent> filter = new EventHandler<MouseEvent>() {
+            @Override
             public void handle(MouseEvent event) {
-                handleEvent("Capture", event);
+                // TODO Auto-generated method stub
+
             }
         };
 
         EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
+            @Override
             public void handle(MouseEvent event) {
-                handleEvent("Bubbling", event);
+                // TODO Auto-generated method stub
+
             }
         };
     }
