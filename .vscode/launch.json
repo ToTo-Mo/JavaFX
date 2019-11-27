@@ -4,7 +4,33 @@
     // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.task.TextArea.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.task.TextInput.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.task.Login.Main",
+            "projectName": "JavaFX"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - ViewController",
@@ -53,12 +79,6 @@
             "request": "launch",
             "mainClass": "application/application.HBOX.App",
             "projectName": "JavaFX"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch) - Current File",
-            "request": "launch",
-            "mainClass": "${file}"
         },
         {
             "type": "java",

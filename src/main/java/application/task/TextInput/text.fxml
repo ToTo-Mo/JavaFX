@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.task.TextInput.Controller">
+   <children>
+      <TextField fx:id="text1" text="문자입력" />
+      <TextField fx:id="text2" promptText="text2" />
+      <TextField fx:id="text3" editable="false" text="문자입력 불가능" />
+      <PasswordField fx:id="password" promptText="password" />
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</FlowPane>
