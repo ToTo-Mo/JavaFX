@@ -4,9 +4,7 @@ import javafx.application.Application;
 import javafx.geometry.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
 import javafx.scene.layout.*;
-import javafx.scene.text.*;
 import javafx.stage.*;
 
 /**

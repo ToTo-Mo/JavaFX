@@ -1,7 +1,5 @@
 package application.task;
 
-import application.HBOX;
-import application.VBOX;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;

@@ -16,23 +16,23 @@ import javafx.scene.layout.AnchorPane;
 public class ApplyController implements Initializable {
 
     @FXML
-    public AnchorPane show;
+    private AnchorPane show;
 
     @FXML
-    public JFXComboBox<String> university;
+    private JFXComboBox<String> university;
     ObservableList<String> list = FXCollections.observableArrayList("Mark", "Tom", "John", "Jack");
 
     @FXML
-    public JFXTextField department;
+    private JFXTextField department;
 
     @FXML
-    public JFXTextField name;
+    private JFXTextField name;
 
     @FXML
-    public JFXTextField phone;
+    private JFXTextField phone;
 
     @FXML
-    public JFXButton apply;
+    private JFXButton apply;
 
     @FXML
     public void initialize(){
@@ -59,7 +59,6 @@ public class ApplyController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
         university.setItems(list);
     }
 }

@@ -6,9 +6,7 @@ import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -27,7 +25,7 @@ public class App extends Application {
         var root = new StackPane();
         root.getChildren().add(label);
         root.getChildren().add(button);
-        root.setAlignment(label,Pos.CENTER);
+        StackPane.setAlignment(label,Pos.CENTER);
 
         
         var scene = new Scene(root,600,480);

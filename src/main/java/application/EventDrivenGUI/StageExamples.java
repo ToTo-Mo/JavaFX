@@ -10,7 +10,6 @@ public class StageExamples extends Application {
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // TODO Auto-generated method stub
         primaryStage.setTitle("JavaFX App");
 
         Stage stage = new Stage();

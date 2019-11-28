@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 /**
@@ -15,7 +14,6 @@ public class ANCHORPANE extends Application {
     @Override
     public void start(Stage stage) {
         AnchorPane root = new AnchorPane();
-        BorderPane child = new BorderPane();
         
         Button btn1 = new Button("Button1");
         root.getChildren().add(btn1);

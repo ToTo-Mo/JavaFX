@@ -8,6 +8,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
+            "mainClass": "application/application.task.RadioButton.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.task.CheckBox.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
             "mainClass": "application/application.task.TextArea.Main",
             "projectName": "JavaFX"
         },

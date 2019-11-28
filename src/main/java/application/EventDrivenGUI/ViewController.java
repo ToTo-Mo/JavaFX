@@ -10,23 +10,22 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class ViewController extends Application {
 
     @FXML
-    public JFXButton apply;
+    private JFXButton apply;
     @FXML
-    public JFXButton cancel;
+    private JFXButton cancel;
     @FXML
-    public JFXButton lookup;
+    private JFXButton lookup;
     @FXML
-    public JFXButton search;
+    private JFXButton search;
     @FXML
-    public JFXButton setting;
+    private JFXButton setting;
     @FXML
-    public AnchorPane show;
+    private AnchorPane show;
 
     Scene scene;
     Stage primaryStage;
@@ -38,7 +37,6 @@ public class ViewController extends Application {
             try {
                 show.getChildren().add(FXMLLoader.load(getClass().getResource("/application/EventDrivenGUI/apply.fxml")));
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });
@@ -54,7 +52,6 @@ public class ViewController extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // TODO Auto-generated method stub
         Parent root = FXMLLoader.load(getClass().getResource("/application/EventDrivenGUI/view.fxml"));
         scene = new Scene(root);
         this.primaryStage = primaryStage;
