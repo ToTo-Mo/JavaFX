@@ -11,6 +11,7 @@ module application {
     exports application.task.TextArea;
     exports application.task.Login;
     exports application.task.CheckBox;
+    exports application.task.ComboBox;
     exports application.task.RadioButton;
     exports application.ResizingOfChildNodes;
     exports application.AligningOfChildNodes;
@@ -22,5 +23,6 @@ module application {
     opens application.task.Login to javafx.fxml;
     opens application.task.CheckBox to javafx.fxml;
     opens application.task.RadioButton to javafx.fxml;
+    opens application.task.ComboBox to javafx.fxml;
     
 }
