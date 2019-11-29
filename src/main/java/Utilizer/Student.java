@@ -3,9 +3,10 @@ package Utilizer;
 import java.io.*;
 
 public class Student implements Serializable {
-    static final long serialVersionUID = 1L;    // 직렬화를 위한 내부 변수
 
-	public static Student student = new Student();
+	private static final long serialVersionUID = 1L;
+	
+	transient public static Student student = new Student();
 
 	public static Student getInstance() {
 		return student;
@@ -14,11 +15,11 @@ public class Student implements Serializable {
 	String student_number;			//학번
 	String name;					//이름
 	String gender;					//성별
-	String student_postcode;		//학생 우편번호
-	String student_address;			//학생 주소
-	String parent_name;				//부모 이름
-	String parent_postcode;			//부모 우편번호
-	String parent_address;			//부모 주소
+	transient String student_postcode;		//학생 우편번호
+	transient String student_address;			//학생 주소
+	transient String parent_name;				//부모 이름
+	transient String parent_postcode;			//부모 우편번호
+	transient String parent_address;			//부모 주소
 
 	public static final int LEN_STUDENT_NUMBER = 8;
 	public static final int LEN_NAME = 15;
@@ -33,6 +34,7 @@ public class Student implements Serializable {
 	public Student() {
 
 	}
+
 
 	public Student(String student_number, String name, String gender, String student_postcode, String student_address,
 			String parent_name, String parent_postcode, String parent_address) {
@@ -151,4 +153,15 @@ public class Student implements Serializable {
 
         return result;
     }
+
+	public Student(String student_number, String name, String gender) {
+		this.student_number = student_number;
+		this.name = name;
+		this.gender = gender;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [gender=" + gender + ", name=" + name + ", student_number=" + student_number + "]";
+	}
 }
