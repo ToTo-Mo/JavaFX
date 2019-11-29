@@ -31,7 +31,6 @@ public class Controller implements Initializable {
                 str = "축하합니다.";
             else
                 str = "틀렸습니다. 다시입력하세요.";
-
             showAlert(str);
         });
 

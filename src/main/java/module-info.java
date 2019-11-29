@@ -4,8 +4,13 @@ module application {
     requires transitive javafx.graphics;
     requires javafx.fxml;
     requires com.jfoenix;
+    requires mysql.connector.java;
+    requires java.sql;
+
+    exports TestServer;
 
     exports application;
+    exports application.Container.ListView;
     exports application.task;
     exports application.task.TextInput;
     exports application.task.TextArea;
@@ -16,6 +21,7 @@ module application {
     exports application.AligningOfChildNodes;
     exports application.UsingCSS;
     exports application.EventDrivenGUI;
+    exports application.Mouse;
 
     opens application.task.TextInput to javafx.fxml;
     opens application.task.TextArea to javafx.fxml;
@@ -23,4 +29,5 @@ module application {
     opens application.task.CheckBox to javafx.fxml;
     opens application.task.RadioButton to javafx.fxml;
     
+    opens application.Container.ListView to javafx.fxml;
 }
