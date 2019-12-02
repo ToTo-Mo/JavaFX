@@ -71,7 +71,7 @@ public class Controller implements Initializable {
     public void display(Stage primaryStage) throws Exception {
         root = FXMLLoader.load(getClass().getResource("/application/task/CheckBox/checkBox.fxml"));
         scene = new Scene(root);
-        Stage stage = primaryStage;
+        stage = primaryStage;
 
         stage.setScene(scene);
         stage.show();

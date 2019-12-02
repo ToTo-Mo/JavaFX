@@ -13,7 +13,7 @@ public class DBmanager {
 	// mysql connector/j 8.x 버전에서는 url에
 	// ?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC 추가해줘야
 	// 한다.
-	private static final String DB_ADDRESS = "jdbc:mysql://localhost/dm?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
+	private static final String DB_ADDRESS = "jdbc:mysql://localhost/test?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
 	private static final String DB_ID = "tejava";
 	private static final String DB_PW = "1q2w3e4r!";
 	Connection conn = null;
