@@ -18,6 +18,8 @@ module application {
     exports application.task.CheckBox;
     exports application.task.ComboBox;
     exports application.task.RadioButton;
+    exports application.task.ListView;
+    exports application.task.TabPane;
     exports application.ResizingOfChildNodes;
     exports application.AligningOfChildNodes;
     exports application.UsingCSS;
@@ -30,6 +32,8 @@ module application {
     opens application.task.CheckBox to javafx.fxml;
     opens application.task.RadioButton to javafx.fxml;
     opens application.task.ComboBox to javafx.fxml;
-    
+    opens application.task.ListView to javafx.fxml;
+    opens application.task.TabPane to javafx.fxml;
+
     opens application.Container.ListView to javafx.fxml;
 }
