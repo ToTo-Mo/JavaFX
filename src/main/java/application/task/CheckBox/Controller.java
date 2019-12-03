@@ -53,6 +53,11 @@ public class Controller implements Initializable {
     }
 
     private double calculate() {
+
+        sum = 0;
+        add1 = 0;
+        add2 = 0;
+
         if(!text.getText().trim().isEmpty())
             page = Double.parseDouble(text.getText());
 
