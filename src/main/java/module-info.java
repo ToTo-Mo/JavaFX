@@ -20,6 +20,7 @@ module application {
     exports application.task.RadioButton;
     exports application.task.ListView;
     exports application.task.TabPane;
+    exports application.task.MouseEvent;
     exports application.ResizingOfChildNodes;
     exports application.AligningOfChildNodes;
     exports application.UsingCSS;
@@ -34,6 +35,7 @@ module application {
     opens application.task.ComboBox to javafx.fxml;
     opens application.task.ListView to javafx.fxml;
     opens application.task.TabPane to javafx.fxml;
-
+    opens application.task.MouseEvent to javafx.fxml;
+    
     opens application.Container.ListView to javafx.fxml;
 }
