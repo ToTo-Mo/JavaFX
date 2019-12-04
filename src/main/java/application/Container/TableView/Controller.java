@@ -34,7 +34,6 @@ public class Controller implements Initializable {
         );
 
         // Column 초기화
-        nameColumn.setCellValueFactory();
 
         // Column 초기화
 

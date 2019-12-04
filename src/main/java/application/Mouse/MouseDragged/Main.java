@@ -1,4 +1,4 @@
-package application.Mouse;
+package application.Mouse.MouseDragged;
 
 import javafx.application.Application;
 import javafx.event.EventHandler;

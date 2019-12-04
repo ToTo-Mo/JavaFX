@@ -25,7 +25,8 @@ module application {
     exports application.AligningOfChildNodes;
     exports application.UsingCSS;
     exports application.EventDrivenGUI;
-    exports application.Mouse;
+    exports application.Mouse.MouseDragged;
+    exports application.MenuBar;
 
     opens application.task.TextInput to javafx.fxml;
     opens application.task.TextArea to javafx.fxml;

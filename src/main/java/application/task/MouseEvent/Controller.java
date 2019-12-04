@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -33,19 +34,17 @@ public class Controller implements Initializable {
             indicator.setText("Button Dragged : " + button.getLayoutX() + ", " + button.getLayoutX());
         });
 
-        Optional.ofNullable(button.getScene()).ifPresent(scene -> {
-            scene.setOnMouseMoved(event->{
+        Platform.runLater(() -> {
+            button.getScene().setOnMouseMoved(event -> {
                 indicator.setText(event.getX() + ", " + event.getY());
-
             });
         });
 
-        Optional.ofNullable(button.getScene()).ifPresent(scene -> {
-            scene.setOnMouseMoved(event->{
+        Platform.runLater(() -> {
+            button.getScene().setOnMouseMoved(event -> {
                 indicator.setText("dragged" + event.getX() + ", " + event.getY());
             });
         });
-        
         click_here.setOnMouseMoved(event -> {
             indicator.setText(event.getX() + " , " + event.getY());
             event.consume();
