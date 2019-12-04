@@ -38,13 +38,12 @@ public class Controller implements Initializable {
             button.getScene().setOnMouseMoved(event -> {
                 indicator.setText(event.getX() + ", " + event.getY());
             });
-        });
-
-        Platform.runLater(() -> {
+        
             button.getScene().setOnMouseMoved(event -> {
                 indicator.setText("dragged" + event.getX() + ", " + event.getY());
             });
         });
+        
         click_here.setOnMouseMoved(event -> {
             indicator.setText(event.getX() + " , " + event.getY());
             event.consume();
