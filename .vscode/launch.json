@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.UserDialog.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.ColorChooser.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.Dialog.FileChooser.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.Dialog.ChoiceDialog.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main2",
             "request": "launch",
             "mainClass": "application/application.MenuBar.Main2",
