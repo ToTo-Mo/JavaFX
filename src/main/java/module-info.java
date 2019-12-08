@@ -28,6 +28,10 @@ module application {
     exports application.EventDrivenGUI;
     exports application.Mouse.MouseDragged;
     exports application.MenuBar;
+    exports application.Dialog.ChoiceDialog;
+    exports application.Dialog.FileChooser;
+    exports application.ColorChooser;
+    exports application.UserDialog;
 
     opens application.task.TextInput to javafx.fxml;
     opens application.task.TextArea to javafx.fxml;
@@ -38,7 +42,7 @@ module application {
     opens application.task.ListView to javafx.fxml;
     opens application.task.TabPane to javafx.fxml;
     opens application.task.MouseEvent to javafx.fxml;
-    
+    opens application.Dialog.ChoiceDialog to javafx.fxml;
     opens application.Container.ListView to javafx.fxml;
     opens application.Container.TableView to javafx.fxml;
 }
