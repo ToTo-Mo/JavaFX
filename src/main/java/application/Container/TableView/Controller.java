@@ -5,6 +5,8 @@ import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXTreeTableView;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,23 +17,26 @@ import javafx.scene.control.TableView;
 public class Controller implements Initializable {
 
     @FXML
-    private TableView<Product> table;
+    private TableView<ProductDataModel> table;
     @FXML
-    private TableColumn<Product,String> nameColumn;
+    private TableColumn<ProductDataModel,String> nameColumn;
     @FXML
-    private TableColumn<Product,Integer> priceColumn;
+    private TableColumn<ProductDataModel,Integer> priceColumn;
     @FXML
-    private TableColumn<Product,String> discriptionColumn;
+    private TableColumn<ProductDataModel,String> descriptionColumn;
 
-    ObservableList<Product> products;
+    ObservableList<ProductDataModel> products = FXCollections.observableArrayList(
+        new ProductDataModel(new SimpleStringProperty("로봇"), new SimpleIntegerProperty(1200),new SimpleStringProperty("TV만화 또봇"))
+    );
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO Auto-generated method stub
+        nameColumn.setCellValueFactory(cellData -> cellData.getValue().getNameProperty());
+        priceColumn.setCellValueFactory(cellData -> cellData.getValue().getPriceProperty().asObject());
+        descriptionColumn.setCellValueFactory(cellData -> cellData.getValue().getDecriptionProperty());
 
-        products = FXCollections.observableArrayList(
-            new Product("배",5600,"xx사에서 만든 올해 최고의 장난감")
-        );
+        table.setItems(products);
 
         // Column 초기화
 

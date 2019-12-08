@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "application/application.Container.TableView.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main2",
             "request": "launch",
             "mainClass": "application/application.MenuBar.Main2",

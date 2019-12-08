@@ -11,6 +11,7 @@ module application {
 
     exports application;
     exports application.Container.ListView;
+    exports application.Container.TableView;
     exports application.task;
     exports application.task.TextInput;
     exports application.task.TextArea;
@@ -39,4 +40,5 @@ module application {
     opens application.task.MouseEvent to javafx.fxml;
     
     opens application.Container.ListView to javafx.fxml;
+    opens application.Container.TableView to javafx.fxml;
 }
