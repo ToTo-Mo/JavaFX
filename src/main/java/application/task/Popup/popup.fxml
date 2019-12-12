@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.RadioMenuItem?>
+
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.task.Popup.Controller">
+   <children>
+      <Label fx:id="text" text="Label" />
+   </children>
+   <fx:define>
+        <ContextMenu  fx:id="contextMenu">
+            <items>
+                <RadioMenuItem fx:id="red" text="Red" >
+                    <toggleGroup>
+                        <ToggleGroup fx:id="toggleGroup"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem fx:id="blue" text="Blue" >
+                    <toggleGroup>
+                        <fx:reference source="toggleGroup"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem fx:id="green" text="Green" >
+                    <toggleGroup>
+                        <fx:reference source="toggleGroup"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+                <RadioMenuItem fx:id="black" text="Black" >
+                    <toggleGroup>
+                        <fx:reference source="toggleGroup"/>
+                    </toggleGroup>
+                </RadioMenuItem>
+            </items>
+        </ContextMenu>
+    </fx:define>
+</AnchorPane>

@@ -8,6 +8,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
+            "mainClass": "application/application.task.Menu.Main",
+            "projectName": "JavaFX"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
             "mainClass": "application/application.Graphics.Image.Main",
             "projectName": "JavaFX"
         },

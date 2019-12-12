@@ -21,4 +21,10 @@ module application {
     opens application.Graphics.Shape;
     opens application.task.Graphics.MouseEvent;
     opens application.Graphics.Image;
+    opens application.task.KeyboardGame;
+    opens application.task.Menu;
+    opens application.task.Popup;
+    opens application.task.FileChooser;
+    opens application.task.ColorPicker;
+    opens application.task.UserDialog;
 }
