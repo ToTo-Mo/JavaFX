@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.task.KeyboardGame.Controller">
+   <children>
+      <Label fx:id="me" layoutX="142.0" layoutY="259.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #33aaff;" />
+      <Label fx:id="enemy" layoutX="290.0" layoutY="171.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ff5544;" />
+      <Label fx:id="red_position" alignment="CENTER" layoutX="8.0" layoutY="463.0" text="test">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
