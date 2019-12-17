@@ -21,4 +21,6 @@ module application {
     opens application.Graphics.Shape;
     opens application.task.Graphics.MouseEvent;
     opens application.Graphics.Image;
+    opens application.Pixel.Processing.Lightter;
+    opens application.Pixel.Processing.toColorOrGray;
 }
