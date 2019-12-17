@@ -59,9 +59,9 @@ public class Main extends Application {
 
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showSaveDialog(scene.getWindow());
-        fileChooser.getExtensionFilters(
-            new FileChooser.ExtensionFilter("file", "*.png")
-        );
+        // fileChooser.getExtensionFilters(
+        //     new FileChooser.ExtensionFilter("file", "*.png")
+        // );
 
         try {
             Files.write(Paths.get(file.getPath()), Files.readAllBytes(Paths.get(image.getUrl())));

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.task.Menu.Controller">
+   <children>
+      <MenuBar prefHeight="30.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="about" mnemonicParsing="false" text="about">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </MenuItem>
+              <MenuItem fx:id="exit" mnemonicParsing="false" text="exit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu fx:id="format" mnemonicParsing="false" text="Format">
+            <items>
+                  <Menu fx:id="color" mnemonicParsing="false" text="color">
+                     <items>
+                        <RadioMenuItem fx:id="red" mnemonicParsing="false" text="red">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="color_toggle" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="blue" mnemonicParsing="false" text="blue" toggleGroup="$color_toggle" />
+                        <RadioMenuItem fx:id="green" mnemonicParsing="false" text="green" toggleGroup="$color_toggle" />
+                        <RadioMenuItem fx:id="black" mnemonicParsing="false" text="black" toggleGroup="$color_toggle" />
+                     </items>
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </Menu>
+                  <Menu fx:id="font" mnemonicParsing="false" text="font">
+                     <items>
+                        <RadioMenuItem fx:id="arial" mnemonicParsing="false" text="Arial">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="font_toggle" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="cambria" mnemonicParsing="false" text="Cambria" toggleGroup="$font_toggle" />
+                        <RadioMenuItem fx:id="corbol" mnemonicParsing="false" text="Corbel" toggleGroup="$font_toggle" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <CheckMenuItem fx:id="bold" mnemonicParsing="false" text="Bold" />
+                        <CheckMenuItem fx:id="italic" mnemonicParsing="false" text="Italic" />
+                     </items>
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </Menu>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="text" alignment="CENTER" text="String of Test" textAlignment="CENTER" />
+   </children>
+</FlowPane>

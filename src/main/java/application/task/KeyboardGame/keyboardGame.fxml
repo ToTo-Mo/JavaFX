@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.task.KeyboardGame.Controller">
+   <children>
+      <Label fx:id="red_skin" layoutX="69.0" layoutY="121.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #df3575;" />
+      <Label fx:id="blue_skin" layoutX="283.0" layoutY="185.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #447af6;" />
+      <Label fx:id="red_position" alignment="CENTER" layoutY="500.0" text="test" textAlignment="CENTER" />
+   </children>
+</Pane>

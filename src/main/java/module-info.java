@@ -21,6 +21,15 @@ module application {
     opens application.Graphics.Shape;
     opens application.task.Graphics.MouseEvent;
     opens application.Graphics.Image;
+<<<<<<< HEAD
     opens application.Pixel.Processing.Lightter;
     opens application.Pixel.Processing.toColorOrGray;
+=======
+    opens application.task.KeyboardGame;
+    opens application.task.Menu;
+    opens application.task.Popup;
+    opens application.task.FileChooser;
+    opens application.task.ColorPicker;
+    opens application.task.UserDialog;
+>>>>>>> abce4437f4a1eed053fbe247dfab301abf57b45b
 }
